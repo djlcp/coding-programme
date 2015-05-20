@@ -1,4 +1,4 @@
-# Digital Jersey Coding Programme
+## Digital Jersey Coding Programme
 
 This repository contains a brief overview of each session run on the course along with links to relevant resources and completed code written by mentors during sessions.  If you're lucky you might find that some of the code has comments.
 
@@ -8,7 +8,7 @@ This repository contains a brief overview of each session run on the course alon
 
 Links to go here about DNS and how browsers render code
 
-You can find my completed code in the 'Session 2' Folder.  The way i've done is not necessarily going to be the right way, as there are many different ways to get to the same end result (something that looks the same). 
+You can find my completed code in the 'Session 2' Folder.  Remember that the way i've done it is not necessarily going to be the right way, as there are many different ways to get to the same end result (something that looks the same). 
 
 ##### 3 - Coding up the design of session 2
 
