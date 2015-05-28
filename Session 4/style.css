@@ -1,0 +1,216 @@
+/***********************************************
+  Change box sizing on all elements
+  Read why here: http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts
+***********************************************/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***********************************************
+  The 'clearfix hack'
+  Read more about it here: https://css-tricks.com/snippets/css/clear-fix/
+***********************************************/
+
+.group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/***********************************************
+  General
+***********************************************/
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  height: 100%;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/***********************************************
+  Header
+***********************************************/
+
+.main-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  padding: 15px 30px;
+  background: #1B2224;
+}
+.logo {
+  height: 20px;
+  margin-top: 5px;
+  float: left;
+}
+
+.search-wrap {
+  /* Need this in order to position our magnifying glass icon (see below) */
+  position: relative;
+}
+
+.search {
+
+  /* Remove default webkit appearance */
+  -webkit-appearance: none;
+  border: none;
+
+  /* Define padding in em units so that if we change the font size the padding (and the search icon below) scales with it */
+  padding: 0.3em 1.6em 0.3em 0.6em;
+  -webkit-border-radius: 1em;
+          border-radius: 1em;
+
+  color: #666;
+  float: right;
+}
+
+/* Remove annoying outline on search box when you click in it */
+.search:focus {
+  outline: none;
+}
+
+/* Putting that magnifying glass icon inside the search bar */
+.search-icon {
+  position: absolute;
+  right: 0.6em;
+  top: 0.3em;
+  color: #999;
+}
+
+/***********************************************
+  Sidebar
+***********************************************/
+
+.sidebar {
+  padding: 20px 30px;
+  background: #232B2D;
+  position: absolute;
+  top: 0;
+  width: 240px;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid #37B298;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-header {
+  color: #666;
+  text-transform: uppercase;
+}
+.nav-links li {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+  font-weight: 500;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #888;
+}
+.nav-links li a i {
+  margin-right: 10px;
+}
+.nav-links li.active a,
+.nav-links li:hover a {
+  color: #CCC;
+}
+
+/***********************************************
+  Main Content
+***********************************************/
+
+main {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 240px;
+}
+.page-header {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.page-title {
+  float: left;
+  margin: 0;
+}
+.filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.filters li {
+  float: left;
+  padding: 7px 10px;
+  margin-left: 20px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.filters li a {
+  text-decoration: none;
+  color: #CCC;
+}
+.filters li.active,
+.filters li:hover {
+  background: #37B298;
+}
+.filters li.active a,
+.filters li:hover a {
+  color: #FFF;
+}
+
+/***********************************************
+  Gallery
+***********************************************/
+.gallery-item {
+
+  /* The easiest way to get items to flow as the page size changes is to set each gallery item as an inline block */
+  display: inline-block;
+
+  width: 200px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 10px;
+}
+.gallery-item img {
+  width: 100%;
+}
+.gallery-item .item-title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #444;
+}
+.gallery-item .uploaded-at {
+  color: #999;
+}
+.gallery-item.active,
+.gallery-item:hover {
+  background: #DDD;
+}
