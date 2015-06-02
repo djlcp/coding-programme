@@ -35,3 +35,16 @@ Coding up another design
 * For the gallery, don't worry about using the images on the design. Instead, use a service such as [PlaceKitten](https://placekitten.com/) which will provide you with lovely placeholder images of kittens.
 * For the icons, don't use images.  Instead use an icon font such as [FontAwesome](http://fortawesome.github.io/Font-Awesome/get-started/).   To use it just include a link to it in the head of your page (BootstrapCDN by MaxCDN method). Find out how to use the icons from the examples page.
 * For the font, try using [Google Web Fonts](https://www.google.com/fonts) - Perhaps try using a font such as Lato.
+
+##### 6 - Setting up a ruby development environment
+
+* Windows: You'll have Robs fancy Ubuntu virtual machine installed on your PC
+* Mac: We lead you through [this guide](http://railsapps.github.io/installrubyonrails-mac.html)
+
+##### 7 - Intro to ruby
+
+Matt's exercises can be found in the folder titled *Session 6-9*
+
+Some sample solutions to the problem can also be found in this folder
+
+
