@@ -44,6 +44,7 @@ Coding up another design
 ##### 7 - Intro to ruby
 
 Matt's exercises can be found in the folder titled *Session 6-9*
+
 Some sample solutions to the problem can also be found in this folder
 
 
