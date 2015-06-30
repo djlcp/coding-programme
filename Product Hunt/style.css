@@ -1,35 +1,55 @@
-.group:after {
-  display: table;
-  content: "";
-  clear: both;
+/****************************************************************
+  General Stuff
+****************************************************************/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box !important;
+     -moz-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
+
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
+  font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-
-
+.group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 
 .content-wrap {
   width: 900px;
   margin: 0 auto;
+  position: relative;
 }
 
-.main-header {
-}
+/****************************************************************
+  Header
+****************************************************************/
 
 .top-header {
   border-bottom: 1px solid #DDD;
   padding: 20px;
+  position: relative;
+}
+
+/********************************
+  Logo
+********************************/
+.logo-wrap {
+  display: inline-block;
 }
 .logo {
-  float: left;
-  width: 300px;
-}
-.logo h1 {
+  display: inline-block;
   margin: 0;
   font-size: 1.8rem;
   color: #DA552F;
@@ -37,7 +57,7 @@ body {
 }
 .logo:before {
   margin-right: 10px;
-  float: left;
+  font-weight: 300;
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -48,16 +68,67 @@ body {
   background: #DA552F;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+}
 
+/********************************
+  Search
+********************************/
+
+.search-wrap {
+  display: inline-block;
+  position: absolute;
+  right: 120px;
+  font-size: 1.6rem;
+  line-height: 40px;
 }
-.search {
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #DDD;
 }
+.search-icon:hover {
+  color: #DA552F;
+}
+.search-input {
+  padding: 0.5em 30px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 1px solid #DDD;
+  color: #DDD;
+  width: 240px;
+  line-height: 1.3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.search-input::-webkit-input-placeholder {
+  color: #DDD;
+}
+.search-reset {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #DDD;
+}
+.search-reset:hover {
+  cursor: pointer;
+  color: #AAA;
+}
+.search-input:focus {
+  outline: none;
+  border: 1px solid #AAA;
+  color: #AAA;
+  width: 730px;
+}
+
+/********************************
+  Login buttons
+********************************/
+
 .login {
   float: right;
   color: #CCC;
-  text-decoration: none;
   font-size: 1.8rem;
   line-height: 40px;
 }
@@ -77,37 +148,55 @@ body {
   background: #DA552F;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  text-decoration: none;r
 }
 
-
+/********************************
+  Nav Links
+********************************/
 
 .main-nav {
   border-bottom: 1px solid #DDD;
-  /*padding: 20px;*/
 }
 .main-nav-links {
   list-style: none;
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 600;
   color: #BBB;
 }
 .main-nav-links li {
   text-transform: uppercase;
   float: left;
-  margin-right: 20px;
+  margin-right: 30px;
   padding: 15px 0;
 }
+.main-nav-links li sup {
+  text-transform: lowercase;
+}
+/* Default link colours in case we dont put a specific class on it */
 .main-nav-links li.active,
 .main-nav-links li:hover {
+  color: #777;
+  border-bottom: 3px solid #777;
+}
+.main-nav-links li.tech.active,
+.main-nav-links li.tech:hover {
   color: #5898F1;
-  border-bottom: 3px solid #5898F1;
+  border-color: #5898F1;
+}
+.main-nav-links li.games.active,
+.main-nav-links li.games:hover {
+  color: #ca65e9;
+  border-color: #ca65e9;
 }
 
-
-
+/****************************************************************
+  Content
+****************************************************************/
+.day {
+  margin-bottom: 30px;
+}
 .day-header {
   text-align: center;
   padding: 20px 0;
@@ -118,60 +207,102 @@ body {
   color: #222;
   margin: 0;
 }
-.day-header span {
+.day-header time {
   font-size: 1.4rem;
   color: #AAA;
+  font-weight: 300;
 }
 
+/********************************
+  Posts
+********************************/
 
 .post {
   padding: 10px;
-  /*background: red;*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.post:hover {
-  background: #EEE;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-}
-.vote-wrap {
+.upvote {
+  margin-top: 5px;
   font-size: 1.3rem;
   width: 60px;
   float: left;
   text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: none;
+  border: none;
 }
 .post-content {
+  width: 650px;
   float: left;
 }
+.post-title,
+.post-description {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+}
 .post-title {
-  color: #BBB;
+  color: #444;
   font-size: 2rem;
   margin: 0;
 }
 .post-description {
   font-size: 1.7rem;
+  line-height: 1.1;
   color: #999;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
 }
 .post-meta {
-  width: 100px;
   float: right;
+  width: 170px;
+}
+.post-meta > * {
+  float: right;
+  line-height: 50px;
+  color: #BBB;
+  font-size: 1.6rem;
 }
 .post-creator {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   width: 34px;
   height: 34px;
-  float: right;
-
+  margin-right: 30px;
+  border: 2px solid #FFF;
+  margin-top: 6px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .post-comments {
-  margin-left: 30px;
-  line-height: 34px;
-  float: right;
-  font-size: 1.6rem;
-  color: #BBB;
+  margin-left: 10px;
+  width: 50px;
 }
-
+.post:hover {
+  background: #F4F4F4;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.post:hover .upvote {
+  -webkit-transform: scale(1.3,1.3); /* Safari */
+  transform: scale(1.3,1.3);
+}
+.post:hover .post-creator {
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  transform: translateX(-30px);
+}
+.upvote:hover {
+  color: #5898F1;
+}
+.post-title:hover {
+  text-decoration: underline;
+}
 
 
 

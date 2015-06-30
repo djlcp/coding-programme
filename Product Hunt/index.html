@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Product Hunt</title>
 
-  <!--<script src="http://use.typekit.net/koq1kyb.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>-->
+  <script src="http://use.typekit.net/koq1kyb.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
@@ -19,18 +21,20 @@
 
       <div class="content-wrap group">
 
-        <div class="logo">
-          <h1>Product Hunt</h1>
+        <a href="#" class="logo-wrap">
+          <h1 class="logo">Product Hunt</h1>
+        </a>
+
+        <div class="search-wrap">
+          <i class="fa fa-search search-icon"></i>
+          <input type="search" class="search-input" placeholder="Search for a product...">
+          <i class="fa fa-close search-reset"></i>
         </div>
-
-        <input type="search" class="search" placeholder="Search for a product...">
-
 
         <a href="#" class="add-new-post">+</a>
         <a href="#" class="login">Log in</a>
 
       </div>
-
 
     </div>
 
@@ -39,9 +43,9 @@
       <div class="content-wrap">
 
         <ul class="main-nav-links group">
-          <li class="active">Tech</li>
-          <li>Games&beta;</li>
-          <li>Collections</li>
+          <li class="active tech"><a href="#">Tech</a></li>
+          <li class="games"><a href="#">Games<sup> &beta;</sup></a></li>
+          <li><a href="#">Collections</a></li>
         </ul>
 
       </div>
@@ -57,40 +61,82 @@
       <section class="day">
 
         <header class="day-header">
-          <h2>Today <span class="subtext">June 23rd</span></h2>
+          <h2>Today <time datetime="2015-06-23 00:00">June 22rd</time></h2>
         </header>
 
         <div class="post group">
-          <div class="vote-wrap">
+          <button class="upvote">
             &#9650;
             <br>
-            <span class="votes">128</span>
-          </div>
-          <div class="post-content">
-            <h3 class="post-title">Webydo 2.0</h3>
-            <p class="post-description">Seamless web design platform for professionals, code-free</p>
-          </div>
+            <span class="votes">642</span>
+          </button>
+          <a href="http://www.google.com" target="_blank" class="post-content">
+            <h3 class="post-title">Rails for Dummies</h3>
+            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repudiandae quidem illo recusandae sit, numquam aliquid adipisci deleniti doloribus! Provident, totam nemo ipsam molestiae vel recusandae explicabo quae nulla, voluptatibus.</p>
+          </a>
           <div class="post-meta">
             <span class="post-comments">29</span>
-
+            <i class="fa fa-comment-o comment-icon"></i>
             <img src="https://gravatar.com/avatar/28683d49924b65a841927ca2ab239ec2.png" alt="post-creator" class="post-creator">
           </div>
         </div>
 
         <div class="post group">
-          <div class="vote-wrap">
+          <button class="upvote">
             &#9650;
             <br>
             <span class="votes">128</span>
-          </div>
-          <div class="post-content">
-            <h3 class="post-title">Webydo 2.0</h3>
-            <p class="post-description">Seamless web design platform for professionals, code-free</p>
-          </div>
+          </button>
+          <a href="https://youtu.be/7m9foWBf2Ko?t=23s" target="_blank" class="post-content">
+            <h3 class="post-title">Hacquoil's secret to weight gain</h3>
+            <p class="post-description">Is not using shortcut keys also making you gain weight?</p>
+          </a>
           <div class="post-meta">
-            <span class="post-comments">29</span>
+            <span class="post-comments">12301</span>
+            <i class="fa fa-comment-o comment-icon"></i>
+            <img src="http://img2.wikia.nocookie.net/__cb20100612124349/frontierville/images/0/03/Apple_Pie-icon.png" alt="post-creator" class="post-creator">
+          </div>
+        </div>
 
-            <img src="https://gravatar.com/avatar/28683d49924b65a841927ca2ab239ec2.png" alt="post-creator" class="post-creator">
+      </section>
+
+      <section class="day">
+
+        <header class="day-header">
+          <h2>Yesterday <time datetime="2015-06-22 00:00">June 22rd</time></h2>
+        </header>
+
+        <div class="post group">
+          <button class="upvote">
+            &#9650;
+            <br>
+            <span class="votes">1198</span>
+          </button>
+          <a href="http://mynameismatthieu.com/WOW/" target="_blank" class="post-content">
+            <h3 class="post-title">Wow.js</h3>
+            <p class="post-description">Wow, such wow.  Much impress.</p>
+          </a>
+          <div class="post-meta">
+            <span class="post-comments">109</span>
+            <i class="fa fa-comment-o comment-icon"></i>
+            <img src="http://dogitivity.appspot.com/static/img/dogeicon.png" alt="post-creator" class="post-creator">
+          </div>
+        </div>
+
+        <div class="post group">
+          <button class="upvote">
+            &#9650;
+            <br>
+            <span class="votes">0</span>
+          </button>
+          <a href="http://www.shouldiusecomicsans.com/" target="_blank" class="post-content">
+            <h3 class="post-title">CSS tips from Matt Chatterley</h3>
+            <p class="post-description">Learn CSS from an SQL pro</p>
+          </a>
+          <div class="post-meta">
+            <span class="post-comments">0</span>
+            <i class="fa fa-comment-o comment-icon"></i>
+            <img src="https://pbs.twimg.com/profile_images/444389062560858112/TcxjBN9T_400x400.jpeg" alt="post-creator" class="post-creator">
           </div>
         </div>
 
