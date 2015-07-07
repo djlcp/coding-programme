@@ -1,0 +1,36 @@
+<section class="day">
+
+  <% @posts.each do |date, posts| %>
+
+    <header class="day-header">
+      <h2>Today <time datetime="<%= date.to_s %>"><%= date.strftime('%e %B') %></time></h2>
+    </header>
+
+    <% posts.each do |post| %>
+
+      <div class="post group">
+
+        <button class="upvote">
+          &#9650;
+          <br>
+          <span class="votes">#</span>
+        </button>
+
+        <%= link_to post.url, class: 'post-content', target: '_blank' do %>
+          <h3 class="post-title"><%= post.title %></h3>
+          <p class="post-description"><%= post.description %></p>
+        <% end %>
+
+        <div class="post-meta">
+          <span class="post-comments">#</span>
+          <i class="fa fa-comment-o comment-icon"></i>
+          <img src="https://gravatar.com/avatar/28683d49924b65a841927ca2ab239ec2.png" alt="post-creator" class="post-creator">
+        </div>
+
+      </div>
+
+    <% end %>
+
+  <% end %>
+
+</section>
