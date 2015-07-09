@@ -31,7 +31,12 @@
         </div>
 
         <%= link_to '+', new_post_path, class: 'add-new-post' %>
-        <a href="#" class="login">Log in</a>
+
+        <% if user_signed_in? %>
+          <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'login' %>
+        <% else %>
+          <%= link_to 'Log in', new_user_session_path, class: 'login' %>
+        <% end %>
 
       </div>
 
@@ -55,6 +60,10 @@
 
   <main class="main-content">
     <div class="content-wrap">
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
       <%= yield %>
     </div>
   </main>

@@ -23,18 +23,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-
-  <div class="field">
     <%= f.label :category %><br>
     <%= f.text_field :category %>
   </div>
 
   <div class="field">
     <%= f.label :url, "URL (with http or https)" %><br>
-    <%= f.text_field :url, placeholder: 'e.g. http://google.com' %>
+    <%= f.url_field :url, placeholder: 'e.g. http://google.com' %>
   </div>
 
   <div class="actions">

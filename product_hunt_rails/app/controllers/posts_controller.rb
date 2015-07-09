@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :authenticate_user!, except: [:index]
+
   before_action :set_post, only: [:edit, :update, :destroy]
 
   # GET /posts
@@ -19,6 +21,7 @@ class PostsController < ApplicationController
   # POST /posts
   def create
     @post = Post.new(post_params)
+    @post.user = current_user
     if @post.save
       redirect_to posts_path, notice: 'Post was successfully created.'
     else
