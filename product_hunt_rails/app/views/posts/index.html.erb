@@ -22,8 +22,10 @@
         <% end %>
 
         <div class="post-meta">
-          <span class="post-comments">#</span>
-          <i class="fa fa-comment-o comment-icon"></i>
+          <span class="post-comments"><%= post.comments.count %></span>
+          <%= link_to post_comments_path(post) do %>
+            <i class="fa fa-comment-o comment-icon"></i>
+          <% end %>
           <img src="https://gravatar.com/avatar/28683d49924b65a841927ca2ab239ec2.png" alt="post-creator" class="post-creator">
         </div>
 

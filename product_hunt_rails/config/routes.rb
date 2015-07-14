@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
 
+  get 'about' => 'static_pages#about'
+  get 'faq' => 'static_pages#faq'
+  get 'test' => 'static_pages#test'
+
   devise_for :users
 
   root 'posts#index'
 
-  resources :posts, except: :show
+  resources :posts, except: :show do
+    resources :comments, only: [:index, :create]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

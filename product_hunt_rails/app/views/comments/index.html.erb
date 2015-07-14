@@ -1,0 +1,34 @@
+<h1>All comments for "<%= @post.title %>"</h1>
+
+<div class="comments">
+
+  <% @comments.each do |comment| %>
+
+    <div class="comment group">
+      <blockquote>
+        <%= comment.content %>
+      </blockquote>
+      <cite><%= comment.user.email %><time datetime="<%= comment.created_at %>">at <%= comment.created_at.strftime('%d/%m/%y %H:%I') %></time></cite>
+
+    </div>
+
+  <% end %>
+
+</div>
+
+<h2>Post a comment</h2>
+
+<%= form_for([@post, @comment]) do |f| %>
+
+  <%= render 'shared/error_list', model: @comment %>
+
+  <div class="field">
+    <%#= f.label :content %>
+    <%= f.text_area :content, rows: 5, placeholder: "Add your comment here" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

@@ -1,0 +1,25 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comments {
+  margin-bottom: 30px;
+}
+
+.comment {
+
+  blockquote {
+    background: #EEE;
+    padding: 10px;
+    margin: 20px 0 5px;
+  }
+  cite {
+    color: #444;
+    float: right;
+  }
+  time {
+    font-size: 1.2rem;
+    padding-left: 10px;
+  }
+
+}
