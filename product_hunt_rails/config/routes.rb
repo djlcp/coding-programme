@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   resources :posts, except: :show do
     resources :comments, only: [:index, :create]
+    member do
+      post 'upvote'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

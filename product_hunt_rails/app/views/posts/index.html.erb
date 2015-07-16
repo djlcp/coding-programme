@@ -10,11 +10,11 @@
 
       <div class="post group">
 
-        <button class="upvote">
+        <%= button_to upvote_post_path(post), class: 'upvote' do %>
           &#9650;
           <br>
-          <span class="votes">#</span>
-        </button>
+          <span class="votes"><%= post.votes.count %></span>
+        <% end %>
 
         <%= link_to post.url, class: 'post-content', target: '_blank' do %>
           <h3 class="post-title"><%= post.title %></h3>

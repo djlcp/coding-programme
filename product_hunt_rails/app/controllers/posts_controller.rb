@@ -1,8 +1,7 @@
 class PostsController < ApplicationController
 
   before_action :authenticate_user!, except: [:index]
-
-  before_action :set_post, only: [:edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy, :upvote]
 
   # GET /posts
   def index
@@ -42,6 +41,16 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     redirect_to posts_path, notice: 'Post was successfully destroyed.'
+  end
+
+  # POST /posts/:id/upvote
+  def upvote
+    @vote = @post.votes.new(user: current_user)
+    if @vote.save
+      redirect_to posts_path, notice: 'Post was successfully upvoted.'
+    else
+      redirect_to posts_path, notice: "You've already voted"
+    end
   end
 
   private
