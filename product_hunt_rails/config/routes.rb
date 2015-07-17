@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :categories
   get 'about' => 'static_pages#about'
   get 'faq' => 'static_pages#faq'
   get 'test' => 'static_pages#test'

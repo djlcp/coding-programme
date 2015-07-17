@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
   # Validations
   # -------------------------------------------------------------------------------------------------------------------
   validates_format_of :url, with: URI::regexp(%w(http https))
-  validates_presence_of :title, :description, :user_id, :category, :url
+  validates_presence_of :title, :description, :user_id, :url
 
 
   # -------------------------------------------------------------------------------------------------------------------
@@ -19,6 +19,9 @@ class Post < ActiveRecord::Base
   belongs_to :user
   has_many :comments
   has_many :votes
+
+  has_many :post_categories
+  has_many :categories, through: :post_categories
 
 
   # -------------------------------------------------------------------------------------------------------------------
