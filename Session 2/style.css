@@ -6,14 +6,6 @@
   font-family: 'proxima-nova-regular';
   src: url('fonts/ProximaNova-Regular.otf');
 }
-@font-face {
-  font-family: 'proxima-nova-semibold';
-  src: url('fonts/ProximaNova-SemiBold.otf');
-}
-@font-face {
-  font-family: 'proxima-nova-light';
-  src: url('fonts/ProximaNova-Light.otf');
-}
 
 /***********************************************
   Change box sizing on all elements
@@ -25,7 +17,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 /***********************************************
   The 'clearfix hack'
@@ -46,7 +37,7 @@ body {
   margin: 0;
   background-color: #D9D9D9;
   color: #222222;
-  font-family: 'proxima-nova-light', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: 'proxima-nova-regular', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 .wrapper {
@@ -69,7 +60,6 @@ body {
 }
 .main-nav {
   float: right;
-  font-family: 'proxima-nova-semibold', 'Helvetica Neue', 'Helvetica', sans-serif;
   margin-right: 40px;
 }
 .main-nav ul {
@@ -106,7 +96,6 @@ body {
 .hero h1 {
   color: #FFF;
   text-transform: uppercase;
-  font-family: 'proxima-nova-semibold';
   font-size: 50px;
   text-align: center;
 }
