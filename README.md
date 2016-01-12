@@ -6,8 +6,6 @@ This repository contains a brief overview of each session run on the course alon
 
 ##### 2 - Taking the design of a simple dashboard page designed by Tom H and coding it up in HTML and CSS
 
-Links to go here about DNS and how browsers render code
-
 You can find my completed code in the 'Session 2' Folder.  Remember that the way i've done it is not necessarily going to be the right way, as there are many different ways to get to the same end result (something that looks the same).
 
 ##### 3 - Coding up the design of session 2
