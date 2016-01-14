@@ -1,10 +1,16 @@
-## Reference Resources
+## CSS Stuff
 
 - [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/): Your one stop shop for when you need to know ALL information about a particular HTML tag or CSS selector
 - [CSS-Tricks Almanac](https://css-tricks.com/almanac/): Well thought explanations of various CSS selectors etc by an industry specialist.  Check out his blog articles, videos and snippets as well
 - [Can I Use?](http://caniuse.com/): Thinking of using a certain CSS selector or property? This site will let you know what browsers support it.
 
-## Before we start to code
+## HTML Stuff
+
+- Know HTML Semantics. [Dive into HTML5](http://diveintohtml5.info/semantics.html#new-elements) - A massive article on HTML5.  Perhaps just look at the small section discussing some of the new HTML5 elements and when to use them.
+- [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
+- [HTML Crimes](http://line25.com/articles/10-html-tag-crimes-you-really-shouldnt-commit) - A relatively old article discussing some things to avoid doing
+
+### Before we start to code
 
 - Does this have to be responsive? (What screen size are we designing this for and whats the target audience)
   - Yes it should be responsive.
@@ -15,17 +21,28 @@
 - Are we working from a design?
   - If so, pay attention to detail. Designers may have put a lot of work into getting things just right.
 
-## Starting coding up
+### Starting to code
 
+- Understand browsers default styles (specifically font size and margin on the body)
 - My preference is to code up most HTML first, then do basic styles for layout before concentrating on specific sections.
-- Know HTML Semantics. [Dive into HTML5](http://diveintohtml5.info/semantics.html#new-elements) - A massive article on HTML5.  Perhaps just look at the small section discussing some of the new HTML5 elements and when to use them.
-- [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
-- [HTML Crimes](http://line25.com/articles/10-html-tag-crimes-you-really-shouldnt-commit) - A relatively old article discussing some things to avoid doing
 - Use developer tools to help you when you have issues
+- Naming conventions
+  - Do not use classes that describe the content of an element. ie 'blue-background' is bad
+  - Give abstract names like 'entries' rather than 'products-list', this way the class is more reusable and can accommodate change
+  - Names should be lowercase with words separated by a hypen (dash)
+  - Try not to abbreviate, full descriptions are usually best for readability ie 'main-nav' is preferred to 'mv-nv'
 
-## The most important things you should know about CSS
+### The most important things you should know about CSS
 
 ### [CSS-Tricks](http://www.css-tricks.com) is the best site ever for CSS information. No questions.
+
+### How CSS rules are interpreted
+- How we write CSS (Selectors, Declarations, properties and values. Don't forget the semi-colon!)
+- Specificity, what it is and how its calculated
+- [CSS-Tricks - Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+- For rules with the same specificity, the last one takes precedence
+- Be as specific as you need to when defining rules. Try to use a flat CSS structure that doesnt mimic your HTML.
+- Use classes as much as possible.  Hardly ever use IDs (unless you need to reference the element in Javascript)
 
 ### Everything is a box.
 - Important to know how the box model works
@@ -58,8 +75,16 @@
 - Most CSS issues in group projects come from overlapping styles.
 - Break CSS rules down into many files that each relate to a specific element or group of elements. Ordered CSS rules are much easier to work with.  A good rule of thumb is max 100 lines per file.
 - Don't style bare elements. E.g applying a default font-size of 24px to a general 'p' tag will likely cause problems.
-- Use classes as much as possible.
-- Be as specific as you need to when defining rules. Try to use a flat CSS structure that doesnt mimic your HTML.
+- Vertical positioning is a nightmare
+  - Try setting all elements to be inline-block and have the same line height
+  - Try Flexbox (more on this later)
 
-## Style Guides
+### Style Guides
 - [AirBnB CSS Style Guide](https://github.com/airbnb/css)
+
+### Other things that we will cover in more detail later
+- Flexbox
+- Pseudo Classes
+- Transitions
+- Transforms
+- Sizing of elements using px, %, em, rem
