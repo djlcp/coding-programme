@@ -10,28 +10,6 @@
 - [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
 - [HTML Crimes](http://line25.com/articles/10-html-tag-crimes-you-really-shouldnt-commit) - A relatively old article discussing some things to avoid doing
 
-### Before we start to code
-
-- Does this have to be responsive? (What screen size are we designing this for and whats the target audience)
-  - Yes it should be responsive.
-  - Try to use widths as percentages.
-  - An easy responsive design can be made by defining a content wrappers with a fixed width. Alter this with media queries (more on this later).
-- Do we need to worry about users using touch?
-  - This might affect sizing of elements that we want them to click.
-- Are we working from a design?
-  - If so, pay attention to detail. Designers may have put a lot of work into getting things just right.
-
-### Starting to code
-
-- Understand browsers default styles (specifically font size and margin on the body)
-- My preference is to code up most HTML first, then do basic styles for layout before concentrating on specific sections.
-- Use developer tools to help you when you have issues
-- Naming conventions
-  - Do not use classes that describe the content of an element. ie 'blue-background' is bad
-  - Give abstract names like 'entries' rather than 'products-list', this way the class is more reusable and can accommodate change
-  - Names should be lowercase with words separated by a hypen (dash)
-  - Try not to abbreviate, full descriptions are usually best for readability ie 'main-nav' is preferred to 'mv-nv'
-
 ### The most important things you should know about CSS
 
 ### [CSS-Tricks](http://www.css-tricks.com) is the best site ever for CSS information. No questions.
@@ -78,6 +56,7 @@
 - Vertical positioning is a nightmare
   - Try setting all elements to be inline-block and have the same line height
   - Try Flexbox (more on this later)
+- Height 100% will require height: 100% on all parents (including body and html tags) in order for it to work
 
 ### Style Guides
 - [AirBnB CSS Style Guide](https://github.com/airbnb/css)
@@ -88,3 +67,26 @@
 - Transitions
 - Transforms
 - Sizing of elements using px, %, em, rem
+
+### Before we start to code
+
+- Does this have to be responsive? (What screen size are we designing this for and whats the target audience)
+  - Yes it should be responsive.
+  - Try to use widths as percentages.
+  - An easy responsive design can be made by defining a content wrappers with a fixed width. Alter this with media queries (more on this later).
+- Do we need to worry about users using touch?
+  - This might affect sizing of elements that we want them to click.
+- Are we working from a design?
+  - If so, pay attention to detail. Designers may have put a lot of work into getting things just right.
+
+### Starting to code
+
+- Understand browsers default styles (specifically font size and margin on the body)
+- My preference is to code up most HTML first, then do basic styles for layout before concentrating on specific sections.
+- Use developer tools to help you when you have issues
+- Naming conventions
+  - Do not use classes that describe the content of an element. ie 'blue-background' is bad
+  - Give abstract names like 'entries' rather than 'products-list', this way the class is more reusable and can accommodate change
+  - Names should be lowercase with words separated by a hypen (dash)
+  - Try not to abbreviate, full descriptions are usually best for readability ie 'main-nav' is preferred to 'mv-nv'
+

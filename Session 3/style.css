@@ -41,17 +41,20 @@ body {
 }
 
 .wrapper {
-  width: 1400px;
-  margin: 0 auto;
   background-color: #FFFFFF;
 }
-
+@media (min-width: 1400px) {
+  .wrapper {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 /***********************************************
   Header
 ***********************************************/
 
-.main-header {
-  width: 100%;
+/* Old Styles */
+/*.main-header {
   padding: 30px;
 }
 .logo {
@@ -62,22 +65,41 @@ body {
   float: right;
   margin-right: 40px;
 }
-.main-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.main-nav ul li {
+.main-nav-link {
   float: left;
   margin-left: 110px;
   line-height: 80px;
-}
-.main-nav ul a {
   text-transform: uppercase;
   text-decoration: none;
   color: #222;
+  font-weight: bold;
 }
-.main-nav ul a:hover {
+.main-nav-link:hover {
+  color: #7A5B9A;
+}*/
+
+/* Flexbox Styles */
+.main-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 80px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.main-nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222;
+  margin-left: 100px;
+  font-weight: bold;
+}
+.main-nav-link:hover {
   color: #7A5B9A;
 }
 
@@ -93,13 +115,13 @@ body {
   background-position: center center;
   padding: 100px;
 }
-.hero h1 {
+.hero-title {
   color: #FFF;
   text-transform: uppercase;
   font-size: 50px;
   text-align: center;
 }
-.hero p {
+.hero-strapline {
   color: #FFF;
   line-height: 1.6;
   text-align: center;
@@ -112,10 +134,10 @@ body {
   Content Grid
 ***********************************************/
 
-.content {
+/* Old Styles */
+/*.content {
   padding: 40px;
 }
-
 .resource {
   height: 300px;
   width: 31.33%;
@@ -131,11 +153,40 @@ body {
 .resource:last-child {
   margin-right: 0;
 }
-.resource img {
+.resource-logo {
   height: 100px;
   margin: 0 auto 30px;
   display: block;
 }
-.resource p {
+.resource-description {
+  line-height: 1.5;
+}*/
+
+/* New Styles */
+.content {
+  padding: 40px;
+}
+.resources {
+  display: flex;
+  justify-content: space-between;
+}
+.resource {
+  min-height: 300px;
+  width: 31%;
+  padding: 30px;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+}
+.resource:hover {
+  background-color: #CCC;
+}
+.resource-logo {
+  max-height: 100px;
+  margin: 0 auto 30px;
+  display: block;
+  max-width: 100%;
+}
+.resource-description {
   line-height: 1.5;
 }
+
