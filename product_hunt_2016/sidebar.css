@@ -1,0 +1,34 @@
+.sidebar {
+  width: 145px;
+  margin-right: 20px;
+}
+.sidebar__nav {
+  margin-bottom: 50px;
+}
+.sidebar__nav-header {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #222;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEE;
+}
+.sidebar__nav-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar__nav-item {
+  margin-bottom: 15px;
+}
+.sidebar__nav-link {
+  color: #999;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+.sidebar__nav-link:hover,
+.sidebar__nav-link--active {
+  background: #f2f2f2;
+  color: #222;
+}
