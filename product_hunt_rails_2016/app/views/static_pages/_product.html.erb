@@ -1,0 +1,30 @@
+<div class="product">
+
+  <div class="product__wrap">
+
+    <img class="product__image" src="http://placebeard.it/110x110" alt="">
+
+    <div class="product__content">
+
+      <%= link_to product_path(product) do %>
+
+        <h2 class="product__title"><%= product.title %></h2>
+        <p class="product__description"><%= product.description %> created by <%= product.user.email %></p>
+
+      <% end %>
+
+      <nav class="product__links">
+        <button class="product__link product__link--upvote">231</button>
+        <a href="" class="product__link product__link--comment">25</a>
+
+        <% if user_signed_in? %>
+          <%= link_to 'Delete', product_path(product), method: :delete %>
+        <% end %>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,55 @@
+<aside class="sidebar">
+
+  <nav class="sidebar__nav">
+    <ul class="sidebar__nav-items">
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">Home</a>
+      </li>
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">Collection</a>
+      </li>
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">LIVE Chats</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="sidebar__nav">
+    <h4 class="sidebar__nav-header">Categories</h4>
+    <ul class="sidebar__nav-items">
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link sidebar__nav-link--active" href="#">Tech</a>
+      </li>
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">Games</a>
+      </li>
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">Books</a>
+      </li>
+      <li class="sidebar__nav-item">
+        <a class="sidebar__nav-link" href="#">Podcasts</a>
+      </li>
+    </ul>
+  </nav>
+
+</aside>
+
+<section class="products">
+
+  <header class="products-header">
+    <h1 class="products-header__title">Today in Tech</h1>
+    <nav class="products-header__nav">
+      <a class="products-header__nav-item" href="#">Popular</a>
+      <a class="products-header__nav-item products-header__nav-item--active" href="#">Newest</a>
+    </nav>
+  </header>
+
+  <div class="products-list">
+
+    <% @products.each do |product| %>
+      <%= render 'product', product: product %>
+    <% end %>
+
+  </div>
+
+</section>
