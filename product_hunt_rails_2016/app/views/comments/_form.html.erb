@@ -1,0 +1,15 @@
+<% if comment.errors.any? %>
+
+  <% comment.errors.full_messages.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+
+<% end %>
+
+<%= form_for [product, comment] do |f| %>
+
+  <%= f.text_area :content %><br>
+  <%= f.submit %>
+
+<% end %>
+

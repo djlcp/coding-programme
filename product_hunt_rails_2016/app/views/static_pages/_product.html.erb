@@ -14,8 +14,10 @@
       <% end %>
 
       <nav class="product__links">
-        <button class="product__link product__link--upvote">231</button>
-        <a href="" class="product__link product__link--comment">25</a>
+
+        <%= link_to product.votes.count, product_votes_path(product), class: 'product__link product__link--upvote', method: :post %>
+
+        <%= link_to product.comments.count, product_path(product), class: 'product__link product__link--comment' %>
 
         <% if user_signed_in? %>
           <%= link_to 'Delete', product_path(product), method: :delete %>

@@ -1,0 +1,18 @@
+<% comments.each do |comment| %>
+
+  <div>
+
+    <header>
+      <h4 class="comment__title">
+        <%= comment.user.email %> @ <%= comment.created_at %>
+      </h4>
+    </header>
+
+    <div class="comment__content">
+      <span class="js-expand-ticket-comment comment__content-expand button button--icon button--chevron-down"></span>
+      <%= simple_format(comment.content) %>
+    </div>
+
+  </div>
+
+<% end %>
