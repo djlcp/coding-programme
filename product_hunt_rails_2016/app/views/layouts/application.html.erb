@@ -20,7 +20,9 @@
         <div class="logo"></div>
 
         <div class="search">
-          <input class="search__input" type="search" placeholder="Discover your next favourite thing...">
+          <%= form_tag root_path, method: :get do %>
+            <%= search_field_tag :s, params[:s], class: "search__input", placeholder: "Discover your next favourite thing..." %>
+          <% end %>
         </div>
 
       </div>

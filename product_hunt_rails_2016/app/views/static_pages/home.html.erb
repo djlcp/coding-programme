@@ -21,10 +21,10 @@
         <a class="sidebar__nav-link sidebar__nav-link--active" href="#">Tech</a>
       </li>
       <li class="sidebar__nav-item">
-        <a class="sidebar__nav-link" href="#">Games</a>
+        <%= link_to 'Games', root_path(category: 'games'), class: "sidebar__nav-link" %>
       </li>
       <li class="sidebar__nav-item">
-        <a class="sidebar__nav-link" href="#">Books</a>
+        <%= link_to 'Books', root_path(category: 'books'), class: "sidebar__nav-link" %>
       </li>
       <li class="sidebar__nav-item">
         <a class="sidebar__nav-link" href="#">Podcasts</a>

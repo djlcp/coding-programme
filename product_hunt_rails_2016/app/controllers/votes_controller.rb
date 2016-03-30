@@ -6,9 +6,9 @@ class VotesController < ApplicationController
   def create
     @vote = @product.votes.new(user: current_user)
     if @vote.save
-      render js: 'alert("successfully upvoted!!")'
+      redirect_to :back, notice: 'Upvoted!'
     else
-      render js: 'alert("You cant upvote more than once")'
+      redirect_to :back, notice: 'You\'ve already upvoted!'
     end
   end
 

@@ -15,7 +15,15 @@
 
       <nav class="product__links">
 
-        <%= link_to product.votes.count, product_votes_path(product), class: 'product__link product__link--upvote', method: :post %>
+        <% if user_signed_in? && !product.votes.pluck(:user_id).include?(current_user.id) %>
+
+          <%= link_to product.votes.count, product_votes_path(product), class: 'product__link product__link--upvote', method: :post %>
+
+        <% else %>
+
+          <span class="product__link"><%= product.votes.count %></span>
+
+        <% end %>
 
         <%= link_to product.comments.count, product_path(product), class: 'product__link product__link--comment' %>
 
