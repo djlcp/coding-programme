@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProjectTemplate</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="main-header">
+    <div class="content-wrap">
+      <h1>Logo Goes Here</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+      <%= yield %>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="content-wrap">
+      <h5>Footer Here</h5>
+    </div>
+  </footer>
+
+
+</body>
+</html>
