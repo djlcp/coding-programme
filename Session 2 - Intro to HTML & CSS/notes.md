@@ -10,9 +10,9 @@
 - Know HTML Semantics. [Dive into HTML5](http://diveintohtml5.info/semantics.html#new-elements) - A massive article on HTML5.  Perhaps just look at the small section discussing some of the new HTML5 elements and when to use them.
 - [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
 
-### The most important things you should know about CSS
-
 ### [CSS-Tricks](http://www.css-tricks.com) is the best site ever for CSS information. No questions.
+- If you're looking for information on CSS, this is the site you should be looking for in your search results
+- Sign up for the weekly email, it contains some good stuff and keeps you up to date with new technologies / methodology
 
 ### How CSS rules are interpreted
 - How we write CSS (Selectors, Declarations, properties and values. Don't forget the semi-colon!)
