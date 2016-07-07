@@ -1,4 +1,4 @@
-## General Introduction
+## Topics to cover
 - Intro to mentors
 - Everyone introduces themselves to each other
 - What are we here to do over the next 6 months
@@ -12,3 +12,7 @@
 - Make sure people are setup on slack, basecamp and treehouse
 - Overview of Digital Jersey and the use of the hub
 - Communicating holiday / time off
+
+## Expectations from mentors
+- Tuesday & Thursday sessions are mandatory
+- Completion of online content (mainly treehouse) also mandatory

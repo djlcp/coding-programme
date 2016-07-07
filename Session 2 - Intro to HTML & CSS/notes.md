@@ -1,14 +1,14 @@
-## CSS Stuff
+## CSS Resources
 
 - [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/): Your one stop shop for when you need to know ALL information about a particular HTML tag or CSS selector
 - [CSS-Tricks Almanac](https://css-tricks.com/almanac/): Well thought explanations of various CSS selectors etc by an industry specialist.  Check out his blog articles, videos and snippets as well
 - [Can I Use?](http://caniuse.com/): Thinking of using a certain CSS selector or property? This site will let you know what browsers support it.
+- [CSS - What not to do](http://www.creativebloq.com/css3/avoid-css-mistakes-10135080)
 
-## HTML Stuff
+## HTML Resources
 
 - Know HTML Semantics. [Dive into HTML5](http://diveintohtml5.info/semantics.html#new-elements) - A massive article on HTML5.  Perhaps just look at the small section discussing some of the new HTML5 elements and when to use them.
 - [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
-- [HTML Crimes](http://line25.com/articles/10-html-tag-crimes-you-really-shouldnt-commit) - A relatively old article discussing some things to avoid doing
 
 ### The most important things you should know about CSS
 
@@ -20,7 +20,7 @@
 - [CSS-Tricks - Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 - For rules with the same specificity, the last one takes precedence
 - Be as specific as you need to when defining rules. Try to use a flat CSS structure that doesnt mimic your HTML.
-- Use classes as much as possible.  Hardly ever use IDs (unless you need to reference the element in Javascript)
+- Use classes as much as possible. Never use IDs (unless you need to reference the element in Javascript)
 
 ### Everything is a box.
 - Important to know how the box model works
@@ -28,7 +28,7 @@
 - [Treehouse - Box sizing explanation](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts)
 
 ### Margin and Padding
-- Think of it like padding goes inside, margin outside.
+- Think of it as => padding goes inside, margin outside.
 - Margin spaces elements.
 - Vertical margins collapse.  Ie largest of two touching vertical margins will be the space between them.
 - Margins need something to push against. They may extend outside of their parent if the parent has no padding.
@@ -89,4 +89,5 @@
   - Give abstract names like 'entries' rather than 'products-list', this way the class is more reusable and can accommodate change
   - Names should be lowercase with words separated by a hypen (dash)
   - Try not to abbreviate, full descriptions are usually best for readability ie 'main-nav' is preferred to 'mv-nv'
+
 
