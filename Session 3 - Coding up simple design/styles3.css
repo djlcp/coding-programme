@@ -1,0 +1,103 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'proxima-nova-regular';
+  src: url('fonts/ProximaNova-Regular.otf');
+}
+
+/*.group:after {
+  display: table;
+  content: "";
+  clear: both;
+}*/
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'proxima-nova-regular', 'Helvetica Neue', 'Helvetica', sans-serif;
+  background: #DDD;
+  margin: 0;
+  font-size: 1.6rem;
+}
+p {
+  line-height: 1.3;
+  color: #222;
+}
+
+.content-wrap {
+  width: 960px;
+  margin: 0 auto;
+  background: #FFF;
+}
+
+.main-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-nav__link {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #555;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.main-nav__link:hover {
+  color: #7A5B9A;
+}
+
+.hero {
+  /*height: 400px;*/
+  background-image: url('images/students-bg-cropped.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 20%;
+  text-align: center;
+  color: #FFF;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: 4.2rem;
+}
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #FFF;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.product {
+  width: 31.5%;
+  border: 1px solid #CCC;
+  background: #DDD;
+  padding: 30px;
+}
+
+.product-logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
