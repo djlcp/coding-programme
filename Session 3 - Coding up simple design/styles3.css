@@ -9,12 +9,6 @@
   src: url('fonts/ProximaNova-Regular.otf');
 }
 
-/*.group:after {
-  display: table;
-  content: "";
-  clear: both;
-}*/
-
 html {
   font-size: 62.5%;
 }
@@ -30,9 +24,14 @@ p {
 }
 
 .content-wrap {
-  width: 960px;
-  margin: 0 auto;
+  width: 100%;
   background: #FFF;
+}
+@media (min-width: 960px) {
+  .content-wrap {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .main-header {
@@ -51,12 +50,18 @@ p {
 }
 .main-nav__link {
   text-transform: uppercase;
-  font-size: 1.6rem;
   text-decoration: none;
   color: #555;
-  margin-left: 50px;
-  margin-right: 20px;
+  margin-left: 30px;
+  font-size: 1.6rem;
 }
+@media (min-width: 800px) {
+  .main-nav__link {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+}
+
 .main-nav__link:hover {
   color: #7A5B9A;
 }
@@ -89,10 +94,21 @@ p {
   padding: 30px;
 }
 .product {
-  width: 31.5%;
+  width: 100%;
   border: 1px solid #CCC;
   background: #DDD;
   padding: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  .product {
+    width: 48%;
+  }
+}
+@media (min-width: 960px) {
+  .product {
+    width: 31.5%;
+  }
 }
 
 .product-logo {
@@ -100,4 +116,3 @@ p {
   display: block;
   margin: 0 auto 30px;
 }
-
