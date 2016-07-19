@@ -8,16 +8,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/***********************************************
-  The 'clearfix hack'
-  Read more about it here: https://css-tricks.com/snippets/css/clear-fix/
-***********************************************/
-
-.group:after {
-  display: table;
-  content: "";
-  clear: both;
+* {
+  /*outline: 1px solid red;*/
 }
 
 /***********************************************
@@ -37,11 +29,15 @@ body {
 }
 
 .content {
+  /*position: relative;*/
   position: absolute;
   top: 60px;
   right: 0;
   bottom: 0;
   left: 0;
+  /*height: 100%;*/
+  /*display: flex;
+  align-items: stretch;*/
 }
 
 /***********************************************
@@ -49,18 +45,14 @@ body {
 ***********************************************/
 
 .main-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 60px;
   padding: 15px 30px;
   background: #1B2224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   height: 20px;
-  margin-top: 5px;
-  float: left;
 }
 
 .search-wrap {
@@ -76,11 +68,9 @@ body {
 
   /* Define padding in em units so that if we change the font size the padding (and the search icon below) scales with it */
   padding: 0.3em 1.6em 0.3em 0.6em;
-  -webkit-border-radius: 1em;
-          border-radius: 1em;
+  border-radius: 1em;
 
   color: #666;
-  float: right;
 }
 
 /* Remove annoying outline on search box when you click in it */
@@ -100,41 +90,42 @@ body {
   Sidebar
 ***********************************************/
 
-.sidebar {
+.main-sidebar {
   padding: 20px 30px;
   background: #232B2D;
+  border-top: 2px solid #37B298;
   position: absolute;
+  left: 0;
+  bottom: 0;
   top: 0;
   width: 240px;
-  bottom: 0;
-  left: 0;
-  border-top: 2px solid #37B298;
+  overflow-y: auto;
 }
 
-.nav-links {
+.main-nav__links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav-header {
+.main-nav__header {
   color: #666;
   text-transform: uppercase;
 }
-.nav-links li {
+.main-nav__item {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2;
   font-weight: 500;
 }
-.nav-links li a {
+.main-nav__link {
   text-decoration: none;
   color: #888;
 }
-.nav-links li a i {
+.main-nav__link-icon {
   margin-right: 10px;
 }
-.nav-links li.active a,
-.nav-links li:hover a {
+.main-nav__item--active .main-nav__link,
+.main-nav__item:hover .main-nav__link {
   color: #CCC;
 }
 
@@ -149,68 +140,71 @@ main {
   right: 0;
   bottom: 0;
   left: 240px;
+  overflow-y: scroll;
+
 }
 .page-header {
   border-bottom: 1px solid #DDD;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.page-title {
-  float: left;
+.page-header__title {
   margin: 0;
+  font-weight: 400;
 }
-.filters {
+.page-header__filters {
   list-style: none;
   margin: 0;
   padding: 0;
-  float: right;
+  display: flex;
 }
-.filters li {
-  float: left;
+.page-header__filter-item {
   padding: 7px 10px;
   margin-left: 20px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
-.filters li a {
+.page-header__filter-link {
   text-decoration: none;
   color: #CCC;
 }
-.filters li.active,
-.filters li:hover {
+.page-header__filter-item--active,
+.page-header__filter-item:hover {
   background: #37B298;
 }
-.filters li.active a,
-.filters li:hover a {
+.page-header__filter-item--active .page-header__filter-link,
+.page-header__filter-item:hover .page-header__filter-link {
   color: #FFF;
 }
 
 /***********************************************
   Gallery
 ***********************************************/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery-item {
-
-  /* The easiest way to get items to flow as the page size changes is to set each gallery item as an inline block */
-  display: inline-block;
-
   width: 200px;
   padding: 10px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
-.gallery-item img {
+.gallery-item__thumbnail {
   width: 100%;
 }
-.gallery-item .item-title {
+.gallery-item__title {
   margin-top: 5px;
   margin-bottom: 0;
   color: #444;
 }
-.gallery-item .uploaded-at {
+.gallery-item__uploaded-at {
   color: #999;
 }
-.gallery-item.active,
+.gallery-item--active,
 .gallery-item:hover {
   background: #DDD;
 }

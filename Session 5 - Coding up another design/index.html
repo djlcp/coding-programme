@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Droplr</title>
+
+  <!-- Normalize stylesheet -->
+  <link rel="stylesheet" href="normalize.css">
+
+  <!-- Google Web Font -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
+
+  <!-- FontAwesome Icon Font -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Our custom styles -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header class="main-header">
+
+    <img src="logo.png" alt="droplr logo" class="logo">
+
+    <div class="search-wrap">
+      <input type="search" class="search" placeholder="search...">
+      <i class="fa fa-search search-icon"></i>
+    </div>
+
+  </header>
+
+  <div class="content">
+
+    <aside class="main-sidebar">
+
+      <nav class="main-nav">
+
+        <h5 class="main-nav__header">Main</h5>
+        <ul class="main-nav__links">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-tachometer"></i>
+              Overview
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-spinner fa-spin"></i>
+              Activity
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-heart-o"></i>
+              Dearest
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-folder-open-o"></i>
+              Folders
+            </a>
+          </li>
+        </ul>
+
+        <h5 class="main-nav__header">Filter</h5>
+        <ul class="main-nav__links">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-picture-o"></i>
+              Images
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-bullhorn"></i>
+              Audio
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-video-camera"></i>
+              Video
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-file-text-o"></i>
+              Notes
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-link"></i>
+              Links
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <i class="main-nav__link-icon fa fa-files-o"></i>
+              Files
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </aside>
+
+    <main>
+
+      <header class="page-header">
+
+        <h1 class="page-header__title">Overview</h1>
+        <ul class="page-header__filters">
+          <li class="page-header__filter-item">
+            <a href="#" class="page-header__filter-link">Name</a>
+          </li>
+          <li class="page-header__filter-item">
+            <a href="#" class="page-header__filter-link">Size</a>
+          </li>
+          <li class="page-header__filter-item">
+            <a href="#" class="page-header__filter-link">Views</a>
+          </li>
+          <li class="page-header__filter-item page-header__filter-item--active">
+            <a href="#" class="page-header__filter-link">Uploaded</a>
+          </li>
+        </ul>
+
+      </header>
+
+      <section class="gallery">
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">43 minutes ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item gallery-item--active">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+        <div class="gallery-item">
+          <img src="http://placebeard.it/200/200" alt="awesome picture thumbnail" class="gallery-item__thumbnail">
+          <p class="gallery-item__title">another-beard.png</p>
+          <time class="gallery-item__uploaded-at" datetime="2015-05-21 17:00:00">2 hours ago</time>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
