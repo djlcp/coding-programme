@@ -1,35 +1,35 @@
 class Animal
 
-  attr_accessor :name, :colour
-  attr_reader :number_of_legs, :gender
+  attr_accessor :legs, :name
+  attr_reader :eyes
 
-  def initialize(args={})
-    @name = args[:name]
-    @colour = args[:colour] || 'brown'
-    @gender = args[:gender]
-    @number_of_legs = args[:number_of_legs]
+  def initialize(name:, eyes: 2, legs: 2)
+    @name = name
+    @eyes = eyes
+    @legs = legs
   end
 
   def eat
     puts 'nom nom nom'
   end
 
-  def sleep(hours)
-    (1..hours).each do |hour|
-      puts 'sleeping'
+  def blind?
+    if @eyes == 0
+      true
+    else
+      false
     end
+  end
 
-    if hours > 3
-      die
-    end
-
+  def kill
+    puts 'I only kill dinosaurs'
+    die if @name == 'dino'
   end
 
 private
 
   def die
-    puts 'oh no a meteorite!'
+    puts 'oh no a meteorite'
   end
 
 end
-

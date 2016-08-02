@@ -5,17 +5,17 @@ class Deck
 
   def initialize
     create_cards
-    shuffle
+    shuffle!
   end
 
   def deal(number)
 
     cards_chosen = @cards.pop(number)
 
-    if number > cards_chosen.count
-      puts "There weren't enough cards. I only dealt #{cards_chosen.count}"
-    elsif number_of_cards_left == 0
+    if @cards.count == 0
       puts 'None left!'
+    elsif number > cards_chosen.count
+      puts "There weren't enough cards. I only dealt #{cards_chosen.count}"
     end
 
     cards_chosen
@@ -28,17 +28,13 @@ private
     @cards = []
     SUITS.each do |suit|
       FACE_VALUES.each do |face_value|
-        @cards << Card.new(suit,face_value)
+        @cards << Card.new(suit: suit,face_value:face_value)
       end
     end
   end
 
-  def shuffle
+  def shuffle!
     @cards.shuffle!
-  end
-
-  def number_of_cards_left
-    @cards.count
   end
 
 end
@@ -47,7 +43,7 @@ class Card
 
   attr_reader :suit, :face_value, :actual_value
 
-  def initialize(suit,face_value)
+  def initialize(suit:,face_value:)
     @suit = suit
     @face_value = face_value
     @actual_value = VALUES[face_value]
