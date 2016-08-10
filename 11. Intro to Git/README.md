@@ -5,7 +5,7 @@
 - Explanation of branching with diagram
 - Difference between git and github/bitbucket
 
-# Sample Workflows
+# Sample workflow 2
 - Setup github account
 - Create new repository with Readme
 - Clone branch onto computers
@@ -14,7 +14,13 @@
 - Pulling before pushing
 - Resolving conflicts
 - Branching
-- Merging
+- Merging branches
+
+# Sample workflow 2
+- Create new empty repository
+- Add files locally
+- Initialising git repository
+- Pushing files to new repository
 
 # Best Practices
 - Commit little and often
