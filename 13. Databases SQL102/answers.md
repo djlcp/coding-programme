@@ -1,6 +1,6 @@
 ## Note: These will not work unless you are using the exact same database as me.
 
-### You will have to create a new database (name not important) and then import the .sql file.  Then you can paste the following code into your editor and run each command individually.
+### You will have to create a new database (name not important) and then import the sql_102.sql file.  Then you can paste the following code into your editor and run each command individually.
 
 ```sql
 -- Write a query which lists all the products currently in stock (SELECT)

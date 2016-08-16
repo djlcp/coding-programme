@@ -44,4 +44,4 @@ Running some queries
 
 - Write a query which produces a list of all products having less in stock than sold.
 
-### You can find the answers to these in the associated answers file
+### You can find the answers to these in the associated answers file.

@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42)
 # Database: coding_programme
-# Generation Time: 2016-08-16 18:29:40 +0000
+# Generation Time: 2016-08-16 18:44:42 +0000
 # ************************************************************
 
 
@@ -53,10 +53,14 @@ DROP TABLE IF EXISTS `order_items`;
 
 CREATE TABLE `order_items` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `order_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
+  `order_id` int(11) unsigned NOT NULL,
+  `product_id` int(11) unsigned NOT NULL,
   `quantity` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `order_id` (`order_id`),
+  KEY `product_id` (`product_id`),
+  CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
+  CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `order_items` WRITE;
@@ -81,9 +85,11 @@ DROP TABLE IF EXISTS `orders`;
 
 CREATE TABLE `orders` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `customer_id` int(11) NOT NULL,
+  `customer_id` int(11) unsigned NOT NULL,
   `created_at` datetime NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `customer_id` (`customer_id`),
+  CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `orders` WRITE;
