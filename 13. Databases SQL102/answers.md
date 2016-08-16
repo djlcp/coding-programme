@@ -1,9 +1,10 @@
 ## Note: These will not work unless you are using the exact same database as me.
 
-### Once you import the .sql database file, you can paste this into your editor and run each command individually.
+### You will have to create a new database (name not important) and then import the .sql file.  Then you can paste the following code into your editor and run each command individually.
 
+```sql
 -- Write a query which lists all the products currently in stock (SELECT)
-SELECT * FROM products;
+SELECT * FROM products WHERE quantity > 0;
 
 -- Write a query for all orders, with the name and address which they need to be sent to (JOIN)
 SELECT orders.id as order_id, customers.name, customers.address FROM orders
@@ -38,3 +39,5 @@ SELECT products.description, products.quantity as num_in_stock, SUM(order_items.
 INNER JOIN order_items ON order_items.product_id = products.id
 GROUP BY products.id
 HAVING num_sold > num_in_stock;
+```
+
