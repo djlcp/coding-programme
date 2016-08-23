@@ -1,0 +1,36 @@
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #F9F9F9;
+  font-size: 1.6rem;
+  font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-content {
+  margin-top: 30px;
+}
+
+/* 100% content width on smaller screens, then fixed at 1170px for larger ones */
+.content-wrap {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 1170px) {
+  .content-wrap {
+    width: 1070px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
