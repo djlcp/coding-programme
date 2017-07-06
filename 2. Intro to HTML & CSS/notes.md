@@ -7,6 +7,7 @@
 
 ## HTML Resources
 
+- [Intro to Semantic HTML](https://internetingishard.com/html-and-css/semantic-html/)
 - Know HTML Semantics. [Dive into HTML5](http://diveintohtml5.info/semantics.html#new-elements) - A massive article on HTML5.  Perhaps just look at the small section discussing some of the new HTML5 elements and when to use them.
 - [Wtf HTML & CSS](http://wtfhtmlcss.com/) - Some common problems that you might encounter when starting out with HTML and CSS
 
