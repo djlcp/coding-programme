@@ -90,4 +90,7 @@ Testing is optional. If you’d prefer to write tests and are comfortable settin
   * It must contain the letters the right number of times
   * Wrap the code which performs these tests in a class, so that when you are given an anagram, you create an instance of ‘Anagram’ (or however you have named it), then call methods or properties on this to test candidates words to see if they match
   * Find an online word-list file (e.g. this one http://wordlist.aspell.net/), download it and load it into your program so that it can solve anagrams without limiting the user’s choice!
+  
+  8. Fizzbuzz
+  * https://en.wikipedia.org/wiki/Fizz_buzz
 
