@@ -14,8 +14,8 @@ We would recommend one of the following (these are the editors the mentors know 
 Packages extend the functionality of your editor. If you can think of it chances are it already exists as a package for the editor.
 
 We would recommend:
-- [https://emmet.io/]Emmet
-- [https://atom.io/packages/erb-snippets]ERB Snippets
+- [Emmet](https://emmet.io/)
+- [ERB Snippets](https://atom.io/packages/erb-snippets)
 
 ## Atom
 https://atom.io/
@@ -34,3 +34,7 @@ Once that is installed (you may need to close and reopen sublime) you can hit `C
 
 ## Visual Studio Code
 https://code.visualstudio.com/
+### Installing Packages
+To install packages in Visual Studio click on the extensions icon in the sidebar. Then simply search and install the extensions you need.
+![Visual Packages](visual_packages.png)
+*Visual Studio Code comes with Emmet installed so you don't need to add it as an extension*
