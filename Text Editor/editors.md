@@ -21,7 +21,7 @@ We would recommend one of the following (these are the editors the mentors know 
 https://atom.io/
 ### Installing packages
 To install packages on Atom simply go to settings `Atom` > `preferences` (or `cmd`+`,`) click on install and then search for and install the package you are looking for.
-[atom_packages](atom_packages.png)
+![atom_packages](atom_packages.png)
 
 ## Sublime Text
 https://www.sublimetext.com/
