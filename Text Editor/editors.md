@@ -19,6 +19,13 @@ We would recommend:om
 
 ## Atom
 https://atom.io/
+
+### Useful Shortcuts
+- `Cmd + S` to save the current file.
+- Use `Cmd + D` to select the next instance of the highlighted word. You can use this to change multiple things at once.
+- Use `Cmd + T` to search for files in the current project.
+- [Cheatsheet](https://github.com/nwinkler/atom-keyboard-shortcuts)
+
 ### Installing packages
 To install packages on Atom simply go to settings `Atom > preferences` (or `cmd + ,`) click on install and then search for and install the package you are looking for.
 
@@ -26,6 +33,14 @@ To install packages on Atom simply go to settings `Atom > preferences` (or `cmd 
 
 ## Sublime Text
 https://www.sublimetext.com/
+
+### Useful shortcuts
+- `Cmd + S` to save the current file.
+- Use `Cmd + D` to select the next instance of the highlighted word. You can use this to change multiple things at once.
+- Use `Cmd + Ctrl + G` to select all instances of the highlighted word in the current file.
+- Use `Cmd + P` to search for files in the current project.
+- [Cheatsheet](https://www.cheatography.com/tdeyle/cheat-sheets/sublime-text-3/)
+
 ### Installing Packages
 In order to install packages in Sublime you first need to set up package control. First you need to open the sublime console `View > Show Console` then copy the code from [here](https://packagecontrol.io/installation#st3) into your console and hit enter.
 
@@ -35,6 +50,14 @@ Once that is installed (you may need to close and reopen sublime) you can hit `C
 
 ## Visual Studio Code
 https://code.visualstudio.com/
+
+### Useful shortcuts
+- `Cmd + S` to save the current file.
+- Use `Cmd + D` to select the next instance of the highlighted word. You can use this to change multiple things at once.
+- Use `Cmd + P` to search for files in the current project.
+- [Mac Cheatsheet](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [Windows Cheatsheet](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
 ### Installing Packages
 To install packages in Visual Studio click on the extensions icon in the sidebar. Then simply search and install the extensions you need.
 
