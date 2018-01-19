@@ -21,11 +21,16 @@ We would recommend one of the following (these are the editors the mentors know 
 https://atom.io/
 ### Installing packages
 To install packages on Atom simply go to settings `Atom` > `preferences` (or `cmd`+`,`) click on install and then search for and install the package you are looking for.
-![atom_packages](atom_packages.png)
+![Atom Packages](atom_packages.png)
 
 ## Sublime Text
 https://www.sublimetext.com/
 ### Installing Packages
+In order to install packages in Sublime you first need to set up package control. First you need to open the sublime console `View` > `Show Console` then copy the code from [here]https://packagecontrol.io/installation#st3 into your console and hit enter.
+
+Once that is installed (you may need to close and reopen sublime) you can hit `Cmd`+`Shift`+`p` type in Package Control: Install Package hit enter again. Then you can search and install all available packages.
+
+![Sublime Packages](sublime_packages.png)
 
 ## Visual Studio Code
 https://code.visualstudio.com/
