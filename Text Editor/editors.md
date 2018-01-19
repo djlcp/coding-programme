@@ -13,7 +13,7 @@ We would recommend one of the following (these are the editors the mentors know 
 ## Packages
 Packages extend the functionality of your editor. If you can think of it chances are it already exists as a package for the editor.
 
-We would recommend:om
+Recommended packages:
 - [Emmet](https://emmet.io/)
 - [ERB Snippets](https://atom.io/packages/erb-snippets)
 
