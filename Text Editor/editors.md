@@ -36,5 +36,7 @@ Once that is installed (you may need to close and reopen sublime) you can hit `C
 https://code.visualstudio.com/
 ### Installing Packages
 To install packages in Visual Studio click on the extensions icon in the sidebar. Then simply search and install the extensions you need.
+
 ![Visual Packages](visual_packages.png)
+
 *Visual Studio Code comes with Emmet installed so you don't need to add it as an extension*
