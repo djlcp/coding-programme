@@ -1,4 +1,4 @@
-#Coding Program - Ruby Foundations - Exercises
+## Ruby Exercises
 
 The purpose of these exercises is to help you apply and practice some of the basics which you have covered in the Treehouse videos and exercises. A good understanding of the basic principles of programming and the foundations of Ruby will help you to progress with the more complicated parts of the course.
 
@@ -16,14 +16,11 @@ The key foundations you should aim to build a solid understanding of include:
 
 * Flow control (if, else, elsif, unless, case, conditional expressions using ?)
 * Loops (while-until, for-in, iterators - each, times, map, upto)
-* Arithmetic - add/subtract/multiple/divide
-* Arrays & Hashes
-* Strings (printing, reading, manipulating and changing)
+* Arithmetic functions
+* Data structures (arrays & hashes)
+* Strings (printing, reading and manipulating)
 * Objects, Classes, Inheritance
 
-A good understanding of Object Orientated programming is really important, so where possible, try to take an ‘OO’ approach to solving these exercises. Ask for help if you need it!
-
-Testing is optional. If you’d prefer to write tests and are comfortable setting up your environment then feel free to do so but don’t feel obligated.
 
 1. Hello, World!
   * Create a program which prints “Hello, World!” to the screen
@@ -90,7 +87,7 @@ Testing is optional. If you’d prefer to write tests and are comfortable settin
   * It must contain the letters the right number of times
   * Wrap the code which performs these tests in a class, so that when you are given an anagram, you create an instance of ‘Anagram’ (or however you have named it), then call methods or properties on this to test candidates words to see if they match
   * Find an online word-list file (e.g. this one http://wordlist.aspell.net/), download it and load it into your program so that it can solve anagrams without limiting the user’s choice!
-  
+
   8. Fizzbuzz
   * https://en.wikipedia.org/wiki/Fizz_buzz
 
