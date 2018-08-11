@@ -7,8 +7,6 @@
 - What are the rules?
 - How to get yourself kicked off
 - Intro to course curriculum, first look at ‘How to make a Website’
-- Explain expectations by the end of this week
-- Digital industry tour and potential conference trip
 - Make sure people are setup on slack, basecamp and treehouse
 - Overview of Digital Jersey and the use of the hub
 - Communicating holiday / time off
