@@ -1,6 +1,0 @@
-.content-wrap {
-  @include breakpoint(large) {
-    width: $desktop-width;
-    margin: 0 auto;
-  }
-}

@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+.square {
+  height: 400px;
+  width: 400px;
+  background: red;
+  transition: all 0.5s linear;
+  // position: absolute;
+  // animation: corners 1s infinite;
+}
+
+.square:hover {
+  border-radius: 50%;
+  background: blue;
+  transform: rotate(480deg);
+  animation: flip 0.1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(20px);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotatex(0deg);
+  }
+
+  50% {
+    transform: rotatex(180deg);
+  }
+
+  100% {
+    transform: rotatex(360deg);
+  }
+}
+
+@keyframes corners {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  50% {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+
+  75% {
+    top: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
