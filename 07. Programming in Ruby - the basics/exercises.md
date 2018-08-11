@@ -10,7 +10,7 @@ Oh, and you’re probably going to get stuck at some point.. we deliberately hav
 
 There's a good Ruby cheat-sheet here: http://www.pragtob.info/rails-beginner-cheatsheet/ (ignore the 'Rails' bits for now!)
 
-Some items are in italics. Treat these as ‘homework’ exercises if you want to dig a deeper. Please try to complete EITHER 1, 2 or 3 first and then move on to one of the games (4+).
+Please try to complete EITHER 1, 2 or 3 first and then move on to one of the games (4+).
 
 The key foundations you should aim to build a solid understanding of include:
 
